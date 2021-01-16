@@ -10,16 +10,60 @@
 
 
 
-    <ImageView
-        android:id="@+id/articleImage"
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="50dp"
+        android:id="@+id/menu1"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:adjustViewBounds="false"
-        android:background="@color/darkGray"
-        android:cropToPadding="true"
-        android:padding="0dp"
-        android:paddingBottom="0dp"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/img_basketball" />
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="1dp"
+        app:cardElevation="30dp"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/articleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="false"
+                    android:background="@color/darkGray"
+                    android:cropToPadding="true"
+                    android:padding="0dp"
+                    android:paddingBottom="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_basketball" />
+
+                <TextView
+                    android:id="@+id/articleName"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/articleImage"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/gradient_title"
+                    android:elevation="3dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Daftar Guru Pembimbing"
+                    android:textColor="@color/white"
+                    tools:targetApi="lollipop"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

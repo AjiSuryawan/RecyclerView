@@ -20,13 +20,13 @@ public class MainMenu extends AppCompatActivity {
 
         getSupportActionBar().setTitle(R.string.toolbar_title);
 
-//        CardView menu1= (CardView)findViewById(R.id.menu1);
-//        menu1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-//            }
-//        });
+        CardView menu1= (CardView)findViewById(R.id.menu1);
+        menu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
 
     }
 }
