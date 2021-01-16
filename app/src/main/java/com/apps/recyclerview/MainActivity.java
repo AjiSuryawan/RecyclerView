@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements ContactsAdapter.C
 
         // toolbar fancy stuff
         getSupportActionBar().setTitle(R.string.toolbar_title);
-        getSupportActionBar().setTitle(R.string.toolbar_title);
 
         recyclerView = findViewById(R.id.recycler_view);
         contactList = new ArrayList<>();
