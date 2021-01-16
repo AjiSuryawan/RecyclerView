@@ -8,8 +8,6 @@
     tools:context=".MainMenu"
     tools:showIn="@layout/activity_main_menu">
 
-
-
     <androidx.cardview.widget.CardView
         android:layout_marginTop="50dp"
         android:id="@+id/menu1"
