@@ -39,7 +39,7 @@
                     android:padding="0dp"
                     android:paddingBottom="0dp"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/img_basketball" />
+                    android:src="@drawable/img_basketball" />
 
                 <TextView
                     android:id="@+id/articleName"
