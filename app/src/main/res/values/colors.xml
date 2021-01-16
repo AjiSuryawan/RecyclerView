@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="contact_name">#333333</color>
     <color name="contact_number">#8c8c8c</color>
+    <color name="darkGray">@android:color/darker_gray</color>
+    <color name="transparent">#00000000</color>
+    <color name="mediumTransparent">#3c000000</color>
+    <color name="largeTransparent">#71000000</color>
 </resources>
