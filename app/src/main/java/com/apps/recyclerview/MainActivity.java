@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements ContactsAdapter.C
 
         // toolbar fancy stuff
         getSupportActionBar().setTitle(R.string.toolbar_title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recyclerView = findViewById(R.id.recycler_view);
         contactList = new ArrayList<>();
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements ContactsAdapter.C
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_search) {
             return true;
+        } else if (id == android.R.id.home) {
+            onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
